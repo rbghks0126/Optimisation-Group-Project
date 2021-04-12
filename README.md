@@ -10,5 +10,6 @@ Group project repository
 ## Papers
 * These are some papers that I found useful doing CA2 and this group assignment. If you come across any relevant papers, let me know and I can upload it here.
 	
+## Gurobi
 * Install Gurobi (faster optimizer) here: https://www.gurobi.com/academia/academic-program-and-licenses/ (follow the instructions for 'Individual Academic Licenses')
 	* If you don't have Gurobi installed, just replace Gurobi with Cbc and it should work fine too.
