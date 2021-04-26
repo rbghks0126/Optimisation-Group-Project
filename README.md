@@ -1,6 +1,9 @@
 # Optimisation-Group-Project
 Group project repository
 
+## Notes
+* Only data1, data2_6, data3_6 are feasible right now.
+
 ## Links
 * Report to overleaf: https://www.overleaf.com/project/607a7d0e0383dd240fe1084d
 * Graph diagram generation: https://www.overleaf.com/project/608250528b54e9d3f82894dc
