@@ -4,7 +4,7 @@ Group project repository
 ## Links
 * Report to overleaf: https://www.overleaf.com/project/607a7d0e0383dd240fe1084d
 * Graph diagram generation: https://www.overleaf.com/project/608250528b54e9d3f82894dc
-
+	* Tikz-network manual: http://mirrors.ibiblio.org/CTAN/graphics/pgf/contrib/tikz-network/tikz-network.pdf
 ## Opening data files
 * When you are running the model in julia, make sure you set the working directory to your current file location to be able to open the data files. 
 	* From the menu at top, click Juno -> Working Directory -> Current File's folder
