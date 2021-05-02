@@ -17,4 +17,4 @@ Group project repository
 	
 ## Gurobi
 * Install Gurobi (faster optimizer) here: https://www.gurobi.com/academia/academic-program-and-licenses/ (follow the instructions for 'Individual Academic Licenses')
-	* If you don't have Gurobi installed, just replace Gurobi with Cbc and it should work fine too.
+	* If you don't have Gurobi installed, just replace Gurobi with Cbc and it should work fine too in most cases.
