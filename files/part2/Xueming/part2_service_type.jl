@@ -65,7 +65,7 @@ for k in 1:K
     for v in skipmissing(H[k,:])
         for i in skipmissing(A[k,2:length(A[k,:])])
             for j in skipmissing(A[k,2:length(A[k,:])])
-                @constraint(model, u[i,v] - u[j,v] + (N-1) * x[i,j,v,k] <= (N-1) - 1 )
+                @constraint(model, u[i,v] - u[j,v] + (length(A[k,:])-1) * x[i,j,v,k] <= (length(A[k,:])-1) - 1 )
             end
         end
     end
