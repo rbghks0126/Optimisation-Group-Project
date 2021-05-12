@@ -4,7 +4,7 @@ import XLSX
 
 #### read data ####
 xf = XLSX.readxlsx("F:/Julia/New folder/optimisation for industry/group ass/data2_simplified.xlsx")
-l = xf["General!B1"]     # work day duration
+l = 8     # work day duration
 N = xf["General!B3"] + 1  # number of clients + 1
 M = xf["General!B2"]  # number of providers
 # + 1 is for including the headquarter (HS14)
@@ -80,8 +80,8 @@ end
 ######################## end time constraints ######################
 
 # @objective(model, Min,sum(f[k]*x[1,j,k] for j in 1:N for k in 1:M))
-@objective(model, Min, sum(f[k]*x[i,1,k]*(td[i,1,k]+t[i,1]-s[k,1]) for i in N for k in M)+sum(tl[j,k]*P*sum(x[i,j,k] for i in N) for j in N for k in M))
-
+# @objective(model, Min, sum(f[k]*x[i,1,k]*(td[i,1,k]+t[i,1]-s[k,1]) for i in 1:N for k in 1:M)+sum(tl[j,k]*P*sum(x[i,j,k] for i in N) for j in 1:N for k in 1:M))
+@objective(model, Min,sum(x[1,j,k]*f[k]*(sum(x[p,q,k]*(t[p,q] + d[p] + max(0, s[k,q] - s[k,p] - t[p,q] - d[p])) for p in 1:N for q in 1:N)) for j in 2:N for k in 1:M) +sum(tl[j,k]*P*sum(x[i,j,k] for i in N) for j in N for k in M))
 optimize!(model)
 
 
