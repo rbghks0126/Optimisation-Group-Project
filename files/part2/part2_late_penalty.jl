@@ -3,7 +3,7 @@ import XLSX
 
 
 #### read data ####
-xf = XLSX.readxlsx("F:/Julia/New folder/optimisation for industry/group ass/data2_simplified.xlsx")
+xf = XLSX.readxlsx("../data/data2_simplified2.xlsx")
 l = 8     # work day duration
 N = xf["General!B3"] + 1  # number of clients + 1
 M = xf["General!B2"]  # number of providers
