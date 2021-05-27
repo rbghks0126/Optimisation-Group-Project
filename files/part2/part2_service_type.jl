@@ -1,7 +1,7 @@
 using JuMP, Gurobi, Cbc
 import XLSX
 
-xf = XLSX.readxlsx("/Users/joker/Desktop//MAST90014/group assignment/data/data1_part2.xlsx")
+xf = XLSX.readxlsx("../data/data1_part2.xlsx")
 l = xf["General!B1"] ## end time
 N = xf["General!B3"] + 1  # number of locations
 M = xf["General!B2"] ## number of providers
