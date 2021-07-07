@@ -1,5 +1,9 @@
-# Optimisation-Group-Project
+# Home-services-Routing-Optimisation-Group-Project
 Group project repository
+
+## Final Report
+* 'Group8_COMP90014_Optimisation_Group_assignment' is our final report.
+	* Grade: 39/40
 
 ## Notes
 * Only data1, data2_6, data3_6 are feasible right now.
@@ -18,3 +22,4 @@ Group project repository
 ## Gurobi
 * Install Gurobi (faster optimizer) here: https://www.gurobi.com/academia/academic-program-and-licenses/ (follow the instructions for 'Individual Academic Licenses')
 	* If you don't have Gurobi installed, just replace Gurobi with Cbc and it should work fine too in most cases.
+
